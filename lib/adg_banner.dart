@@ -8,28 +8,16 @@ class AdgBanner extends StatefulWidget {
   final String locationId;
   final AdgBannerType type;
 
-  double get resolvedWidth {
+  Size get size {
     switch (type) {
       case AdgBannerType.SP:
+        return Size(320, 50);
       case AdgBannerType.LARGE:
-        return 320;
+        return Size(320, 100);
       case AdgBannerType.RECT:
-        return 300;
+        return Size(300, 250);
       default:
-        return 0;
-    }
-  }
-
-  double get resolvedHeight {
-    switch (type) {
-      case AdgBannerType.SP:
-        return 50;
-      case AdgBannerType.LARGE:
-        return 100;
-      case AdgBannerType.RECT:
-        return 250;
-      default:
-        return 0;
+        return null;
     }
   }
 
@@ -51,8 +39,8 @@ class _AdgBannerState extends State<AdgBanner> {
     }
 
     return Container(
-      width: widget.resolvedWidth,
-      height: widget.resolvedHeight,
+      width: widget.size.width,
+      height: widget.size.height,
       child: AndroidView(
         viewType: AdgBanner._name,
         onPlatformViewCreated: (id) {
