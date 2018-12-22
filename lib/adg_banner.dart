@@ -10,11 +10,11 @@ class AdgBanner extends StatefulWidget {
 
   Size get size {
     switch (type) {
-      case AdgBannerType.SP:
+      case AdgBannerType.sp:
         return Size(320, 50);
-      case AdgBannerType.LARGE:
+      case AdgBannerType.large:
         return Size(320, 100);
-      case AdgBannerType.RECT:
+      case AdgBannerType.rect:
         return Size(300, 250);
       default:
         return null;
@@ -76,11 +76,11 @@ class AdgBannerController {
 
   String _typeValueOf(AdgBannerType type) {
     switch (type) {
-      case AdgBannerType.SP:
+      case AdgBannerType.sp:
         return 'sp';
-      case AdgBannerType.LARGE:
+      case AdgBannerType.large:
         return 'large';
-      case AdgBannerType.RECT:
+      case AdgBannerType.rect:
         return 'rect';
       default:
         return '';

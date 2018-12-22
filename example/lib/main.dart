@@ -20,19 +20,19 @@ class MyApp extends StatelessWidget {
               Text('sp'),
               AdgBanner(
                 locationId: '48547',
-                type: AdgBannerType.SP,
+                type: AdgBannerType.sp,
               ),
               Divider(),
               Text('large'),
               AdgBanner(
                 locationId: '48548',
-                type: AdgBannerType.LARGE,
+                type: AdgBannerType.large,
               ),
               Divider(),
               Text('rect'),
               AdgBanner(
                 locationId: '48549',
-                type: AdgBannerType.RECT,
+                type: AdgBannerType.rect,
               ),
             ],
           ),

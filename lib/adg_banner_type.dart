@@ -1,5 +1,5 @@
 enum AdgBannerType {
-  SP,
-  LARGE,
-  RECT,
+  sp,
+  large,
+  rect,
 }
